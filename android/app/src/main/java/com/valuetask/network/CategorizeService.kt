@@ -21,7 +21,7 @@ object CategorizeService {
      *   https://valuetask.vercel.app/api/categorizeTodo
      */
     private const val FUNCTION_URL =
-        "https://YOUR_VERCEL_URL.vercel.app/api/categorizeTodo"
+        "https://valuetask.vercel.app/api/categorizeTodo"
 
     private val client = OkHttpClient.Builder()
         .connectTimeout(10, TimeUnit.SECONDS)
