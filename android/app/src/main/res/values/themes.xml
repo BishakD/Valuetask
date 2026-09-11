@@ -1,0 +1,5 @@
+<resources>
+    <!-- Base application theme — Compose sets its own theme in code,
+         this is only needed by the system for the launch window background. -->
+    <style name="Theme.ValueTask" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>

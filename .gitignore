@@ -1,0 +1,11 @@
+# Firebase & Node artifacts
+node_modules/
+.env
+*.local
+firebase-debug.log
+firebase-debug.*.log
+ui-debug.log
+
+# OS
+.DS_Store
+Thumbs.db

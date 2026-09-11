@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ValueTask</string>
+    <string name="input_hint">Add a to-do…</string>
+    <string name="send">Send</string>
+    <string name="mic">Voice input</string>
+    <string name="retry">Retry</string>
+    <string name="categorizing">Categorizing…</string>
+    <string name="uncategorized">Uncategorized</string>
+    <string name="speech_prompt">Say your to-do item…</string>
+</resources>

@@ -1,0 +1,11 @@
+{
+  "name": "valuetask-api",
+  "version": "1.0.0",
+  "description": "Vercel serverless API for ValueTask to-do categorization",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
