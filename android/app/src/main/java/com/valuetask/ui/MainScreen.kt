@@ -22,11 +22,14 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateMapOf
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.valuetask.R
@@ -50,7 +53,7 @@ fun MainScreen(vm: TodoViewModel = viewModel()) {
     // RecognizerIntent opens the system speech dialog — no RECORD_AUDIO
     // permission needed because the system app owns the microphone session.
     val context = LocalContext.current
-    var isListening by remember { androidx.compose.runtime.mutableStateOf(false) }
+    var isListening by remember { mutableStateOf(false) }
 
     val speechLauncher = rememberLauncherForActivityResult(
         ActivityResultContracts.StartActivityForResult()

@@ -8,10 +8,10 @@ import androidx.compose.ui.platform.LocalContext
 
 @Composable
 fun ValueTaskTheme(content: @Composable () -> Unit) {
-    // Use Material You dynamic colors on Android 12+; fall back to a teal scheme.
-    val colorScheme = try {
-        dynamicLightColorScheme(LocalContext.current)
-    } catch (_: Exception) {
+    val context = LocalContext.current
+    val colorScheme = if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) {
+        dynamicLightColorScheme(context)
+    } else {
         lightColorScheme()
     }
 
